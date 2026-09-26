@@ -3,49 +3,202 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bataboom! Support</title>
-<meta name="description" content="Help for Bataboom! Air Baseball, the Apple Watch game where you swing your arms like a bat.">
+<title>Bataboom! Air Baseball</title>
+<meta name="description" content="Bataboom! turns your Apple Watch into a baseball bat. Swing your arms, hear the crack, meet Laces. Help and support.">
+<meta property="og:title" content="Bataboom! Air Baseball">
+<meta property="og:description" content="Swing your wrist. Hear the crack. Baseball on your Apple Watch.">
+<meta property="og:image" content="https://daniellin0516.github.io/bataboom/promo.jpg">
 <link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="lights" aria-hidden="true"></div>
+
 <main>
-  <header>
+  <header class="top">
     <img src="icon.png" alt="">
-    <div><div class="brand">BATABOOM!</div><div class="tag">Air Baseball for Apple Watch</div></div>
+    <div><div class="brand">BATABOOM<span>!</span></div><div class="tag">Air Baseball for Apple Watch</div></div>
+    <a class="jump" href="#support">Support</a>
   </header>
 
-  <h1>Support</h1>
-  <p class="muted">Questions, bugs or ideas: write to <a href="mailto:daniellin0516@gmail.com">daniellin0516@gmail.com</a>. We read every message.</p>
+  <section class="hero">
+    <div class="pitch">
+      <p class="kicker">No bat. No ball. Just swing.</p>
+      <h1>Swing your wrist.<br><em>Hear the crack.</em></h1>
+      <p class="lede">Bataboom! turns your Apple Watch into a bat. Swing your arms like you're at the plate and the watch answers the instant you connect: the crack, the crowd, the call.</p>
+      <p class="soon"><span class="dot"></span>Coming soon to the App Store</p>
+    </div>
 
-  <h2>How to play</h2>
-  <div class="card">
-    <ul>
-      <li>Open Bataboom! on your Apple Watch and follow the short setup.</li>
-      <li>Hold your hands together like a bat, fingers interlaced, band snug.</li>
-      <li>Swing level and fast. The crack plays the moment you swing.</li>
-      <li>In HR Challenge, swing when the pitch sound is loudest.</li>
-    </ul>
-  </div>
+    <div class="plate">
+      <button class="laces" id="laces" type="button" aria-label="Laces the baseball. Tap to hit a home run."></button>
+      <div class="call" id="call" aria-live="polite"></div>
+      <p class="hint" id="hint">Tap Laces to swing</p>
+    </div>
+  </section>
 
-  <h2>Common questions</h2>
-  <div class="card">
-    <p><strong>The screen goes dark when I swing.</strong><br>
-    That is normal when Always On is off. The game and the sound keep going; raise your wrist to see the result.</p>
-    <p><strong>A swing did not make a sound.</strong><br>
-    Swing with both arms and turn around your body. Chopping down or pulling your arm back is ignored on purpose. You can also set Swing detection to High in Settings.</p>
-    <p><strong>I can't hit home runs.</strong><br>
-    Start on Easy: slower pitches and home runs need less power. In Free Swing, the gold line on the power bar is home-run speed.</p>
-    <p><strong>Will I lose my progress if I delete the app?</strong><br>
-    No. Your scores and unlocked items are backed up in your iCloud and on your paired iPhone, and come back when you reinstall.</p>
-    <p><strong>Leaderboards don't show my score.</strong><br>
-    Open the Bataboom! app on your iPhone once while signed in to Game Center; it sends your best scores.</p>
-  </div>
+  <section class="board" aria-label="At a glance">
+    <div><b>12</b><span>unlocks, all earned</span></div>
+    <div><b>4</b><span>Game Center leaderboards</span></div>
+    <div><b>6</b><span>languages</span></div>
+    <div><b>0</b><span>ads or in-app purchases</span></div>
+  </section>
 
-  <h2>Safety</h2>
-  <p class="muted">Clear the space around you, keep people and breakables out of reach, and tighten your watch band before you swing.</p>
+  <section class="reel">
+    <div class="frame">
+      <video id="reel" src="promo.mp4" poster="promo.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <button id="sound" class="sound" type="button" aria-pressed="false">Sound on</button>
+    </div>
+    <div class="reel-text">
+      <h2>Thirty seconds of Bataboom!</h2>
+      <ul class="plays">
+        <li><b>Free Swing.</b> Every swing is a hit, with exit velocity and distance. Back-to-back homers make the crowd louder.</li>
+        <li><b>HR Challenge.</b> The pitch gets louder and peaks at the perfect moment. Early pulls it, late goes the other way.</li>
+        <li><b>Pass &amp; Play.</b> Two to four friends, one watch, five chances each.</li>
+        <li><b>iPhone companion.</b> A chart of every round, where each hit landed, and your gear.</li>
+      </ul>
+    </div>
+  </section>
 
-  <nav><a href="privacy/">Privacy Policy</a></nav>
+  <section class="meet">
+    <h2>Meet Laces</h2>
+    <p class="muted">A baseball whose red seams are its eyebrows. Tap a face to try it on.</p>
+    <div class="moods" id="moods"></div>
+  </section>
+
+  <div class="stitch" aria-hidden="true"></div>
+
+  <section id="support" class="support">
+    <h2 class="big">Support</h2>
+    <p class="muted">Questions, bugs or ideas: write to <a href="mailto:daniellin0516@gmail.com">daniellin0516@gmail.com</a>. We read every message.</p>
+
+    <h3>How to play</h3>
+    <div class="card">
+      <ul>
+        <li>Open Bataboom! on your Apple Watch and follow the short setup.</li>
+        <li>Hold your hands together like a bat, fingers interlaced, band snug.</li>
+        <li>Swing level and fast. The crack plays the moment you swing.</li>
+        <li>In HR Challenge, swing when the pitch sound is loudest.</li>
+      </ul>
+    </div>
+
+    <h3>Common questions</h3>
+    <div class="card">
+      <p><strong>The screen goes dark when I swing.</strong><br>
+      That is normal when Always On is off. The game and the sound keep going; raise your wrist to see the result.</p>
+      <p><strong>A swing did not make a sound.</strong><br>
+      Swing with both arms and turn around your body. Chopping down or pulling your arm back is ignored on purpose. You can also set Swing detection to High in Settings.</p>
+      <p><strong>I can't hit home runs.</strong><br>
+      Distance comes from swing speed, not force: stay loose and swing all the way through. Start on Easy, where home runs need a slower swing. In Free Swing, the gold line on the bar is home-run speed.</p>
+      <p><strong>Will I lose my progress if I delete the app?</strong><br>
+      No. Your scores and unlocked items are backed up in your iCloud and on your paired iPhone, and come back when you reinstall.</p>
+      <p><strong>Leaderboards don't show my score.</strong><br>
+      Open the Bataboom! app on your iPhone once while signed in to Game Center; it sends your best scores.</p>
+    </div>
+
+    <h3>Safety</h3>
+    <p class="muted">Clear the space around you, keep people and breakables out of reach, and tighten your watch band before you swing.</p>
+  </section>
+
+  <footer>
+    <svg class="diamond" viewBox="0 0 200 110" aria-hidden="true">
+      <path d="M100 104 L40 50 L100 -4 L160 50 Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="100" cy="50" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="96" y="100" width="8" height="8" transform="rotate(45 100 104)" fill="currentColor"/>
+    </svg>
+    <nav><a href="privacy/">Privacy Policy</a><a href="#support">Support</a></nav>
+    <p class="fine">Distances and speeds in Bataboom! are fun estimates, not measurements. Not affiliated with any league or team.</p>
+  </footer>
 </main>
+
+<script src="laces.js"></script>
+<script>
+(function () {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const box = document.getElementById('laces'), call = document.getElementById('call'), hint = document.getElementById('hint');
+  let mood = 'idle', gx = 0, gy = 0, blink = false, busy = false;
+  const draw = () => { box.innerHTML = Laces.svg(mood, { gx, gy, blink, id: 'hero' }); };
+  draw();
+
+  // Eyes follow the pointer while idle.
+  addEventListener('pointermove', e => {
+    if (mood !== 'idle') return;
+    const r = box.getBoundingClientRect();
+    const dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2);
+    const d = Math.max(1, Math.hypot(dx, dy));
+    gx = dx / d * Math.min(1, d / 300); gy = dy / d * Math.min(1, d / 300);
+    draw();
+  });
+  // Blink now and then.
+  (function blinkLoop() {
+    setTimeout(() => {
+      if (mood === 'idle') { blink = true; draw(); setTimeout(() => { blink = false; draw(); }, 130); }
+      blinkLoop();
+    }, 2200 + Math.random() * 2600);
+  })();
+
+  const calls = ['MOONSHOT!', 'BATABOOM!', 'GONE!', 'OUTTA HERE!', 'SEE YA!'];
+  function swing() {
+    if (busy) return;
+    busy = true; hint.textContent = 'Again!';
+    mood = 'contact'; draw();
+    box.classList.remove('pop'); void box.offsetWidth; box.classList.add('pop');
+    setTimeout(() => {
+      const ft = 380 + Math.round(Math.random() * 100);
+      mood = 'homeRun'; draw();
+      call.innerHTML = `<span>${calls[Math.floor(Math.random() * calls.length)]}</span><small>${ft} ft</small>`;
+      call.classList.add('on');
+      if (!reduce) launch();
+    }, 160);
+    setTimeout(() => { call.classList.remove('on'); mood = 'idle'; draw(); busy = false; }, 2200);
+  }
+  box.addEventListener('click', swing);
+
+  // A ball arcs off toward the outfield with a gold trail.
+  function launch() {
+    const r = box.getBoundingClientRect();
+    const b = document.createElement('div');
+    b.className = 'flyball';
+    b.style.left = (r.left + r.width / 2) + 'px'; b.style.top = (r.top + r.height * 0.4 + scrollY) + 'px';
+    document.body.appendChild(b);
+    const dir = Math.random() < 0.5 ? -1 : 1;
+    b.animate([
+      { transform: 'translate(0,0) scale(1)', opacity: 1 },
+      { transform: `translate(${dir * 180}px,-260px) scale(.6)`, opacity: 1, offset: .6 },
+      { transform: `translate(${dir * 300}px,-330px) scale(.25)`, opacity: 0 }
+    ], { duration: 1300, easing: 'cubic-bezier(.2,.7,.4,1)' }).onfinish = () => b.remove();
+  }
+
+  // Mood gallery.
+  const moods = [['ready', 'Squints at the pitcher'], ['contact', 'Crack!'], ['homeRun', 'Home run'],
+                 ['strike', 'Dizzy on a strike'], ['wink', 'Wink'], ['sleep', 'Dozes off']];
+  const g = document.getElementById('moods');
+  moods.forEach(([m, label], i) => {
+    const btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'mood';
+    btn.innerHTML = Laces.svg(m, { id: 'm' + i }) + `<span>${label}</span>`;
+    btn.addEventListener('click', () => {
+      if (busy) return;
+      mood = m; gx = gy = 0; draw();
+      box.classList.remove('pop'); void box.offsetWidth; box.classList.add('pop');
+      box.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+      clearTimeout(btn._t); btn._t = setTimeout(() => { if (!busy) { mood = 'idle'; draw(); } }, 2600);
+    });
+    g.appendChild(btn);
+  });
+
+  // Video sound toggle (videos may only autoplay muted).
+  const v = document.getElementById('reel'), s = document.getElementById('sound');
+  s.addEventListener('click', () => {
+    v.muted = !v.muted;
+    if (!v.muted) { v.currentTime = 0; v.play().catch(() => {}); }
+    s.textContent = v.muted ? 'Sound on' : 'Sound off';
+    s.setAttribute('aria-pressed', String(!v.muted));
+  });
+  if (reduce) { v.removeAttribute('autoplay'); v.pause(); }
+})();
+</script>
 </body>
 </html>
