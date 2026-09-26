@@ -1,0 +1,24 @@
+:root {
+  --night: #0A1410; --dugout: #14221B; --chalk: #EFEBDF; --dust: #9AA79F;
+  --turf: #1F7A3E; --gold: #F5C518;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--night); color: var(--chalk);
+  font: 17px/1.6 ui-rounded, "SF Pro Rounded", -apple-system, "Hiragino Maru Gothic ProN", "PingFang TC", system-ui, sans-serif;
+}
+main { max-width: 680px; margin: 0 auto; padding: 40px 20px 64px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 28px; }
+header img { width: 56px; height: 56px; border-radius: 14px; }
+.brand { font-weight: 900; letter-spacing: 3px; font-size: 20px; }
+.tag { color: var(--dust); font-size: 14px; }
+h1 { font-size: 32px; line-height: 1.2; margin: 0 0 8px; text-wrap: balance; }
+h2 { font-size: 20px; margin: 32px 0 8px; color: var(--gold); }
+p, li { color: var(--chalk); }
+.muted { color: var(--dust); font-size: 15px; }
+.card { background: var(--dugout); border-radius: 18px; padding: 18px 20px; margin: 14px 0; }
+a { color: var(--gold); }
+ul { padding-left: 20px; }
+nav { margin-top: 40px; display: flex; gap: 18px; font-size: 15px; }
+code { background: var(--dugout); padding: 1px 6px; border-radius: 6px; }
