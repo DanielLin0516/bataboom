@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-Hans-CN" data-folder="zh-hans" data-page="guide/swing-not-counting">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bataboom! 挥棒没反应？往下劈和往回拉不算</title>
+<meta name="description" content="Bataboom! 只认双臂水平挥出的棒球挥棒。往下劈、把手臂往回拉或小幅甩手腕都会被故意忽略。这里教你怎么解决，以及“挥棒检测”设置。">
+<meta name="theme-color" content="#0A1410">
+<meta name="apple-itunes-app" content="app-id=6816128720">
+<link rel="canonical" href="https://daniellin0516.github.io/bataboom/zh-hans/guide/swing-not-counting/">
+<link rel="alternate" hreflang="en" href="https://daniellin0516.github.io/bataboom/guide/swing-not-counting/">
+<link rel="alternate" hreflang="ja" href="https://daniellin0516.github.io/bataboom/ja/guide/swing-not-counting/">
+<link rel="alternate" hreflang="ko" href="https://daniellin0516.github.io/bataboom/ko/guide/swing-not-counting/">
+<link rel="alternate" hreflang="zh-Hant" href="https://daniellin0516.github.io/bataboom/zh-hant/guide/swing-not-counting/">
+<link rel="alternate" hreflang="zh-Hans" href="https://daniellin0516.github.io/bataboom/zh-hans/guide/swing-not-counting/">
+<link rel="alternate" hreflang="es" href="https://daniellin0516.github.io/bataboom/es/guide/swing-not-counting/">
+<link rel="alternate" hreflang="fr" href="https://daniellin0516.github.io/bataboom/fr/guide/swing-not-counting/">
+<link rel="alternate" hreflang="x-default" href="https://daniellin0516.github.io/bataboom/guide/swing-not-counting/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bataboom!">
+<meta property="og:title" content="Bataboom! 挥棒没反应？往下劈和往回拉不算">
+<meta property="og:description" content="Bataboom! 只认双臂水平挥出的棒球挥棒。往下劈、把手臂往回拉或小幅甩手腕都会被故意忽略。这里教你怎么解决，以及“挥棒检测”设置。">
+<meta property="og:url" content="https://daniellin0516.github.io/bataboom/zh-hans/guide/swing-not-counting/">
+<meta property="og:image" content="https://daniellin0516.github.io/bataboom/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Bataboom! Swing your wrist. Hear the crack.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="es_MX">
+<meta property="og:locale:alternate" content="fr_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bataboom! 挥棒没反应？往下劈和往回拉不算">
+<meta name="twitter:description" content="Bataboom! 只认双臂水平挥出的棒球挥棒。往下劈、把手臂往回拉或小幅甩手腕都会被故意忽略。这里教你怎么解决，以及“挥棒检测”设置。">
+<meta name="twitter:image" content="https://daniellin0516.github.io/bataboom/og.png">
+<link rel="icon" href="../../../icon.png">
+<link rel="apple-touch-icon" href="../../../icon.png">
+<link rel="preload" href="../../../fonts/Nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../style.css">
+<script src="../../../app.js" defer></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "为什么我的挥棒不算？", "description": "Bataboom! 只认双臂水平挥出的棒球挥棒。往下劈、把手臂往回拉或小幅甩手腕都会被故意忽略。这里教你怎么解决，以及“挥棒检测”设置。", "inLanguage": "zh-Hans-CN", "url": "https://daniellin0516.github.io/bataboom/zh-hans/guide/swing-not-counting/", "image": "https://daniellin0516.github.io/bataboom/og.png", "dateModified": "2026-10-02", "author": {"@type": "Organization", "name": "Twin Build"}, "publisher": {"@type": "Organization", "name": "Twin Build"}, "about": {"@type": "SoftwareApplication", "name": "Bataboom!"}}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="lights" aria-hidden="true"></div>
+<div class="shell">
+  <header class="top">
+    <a class="home" href="../../"><img src="../../../icon.png" alt="" width="52" height="52">
+      <span><span class="brand">BATABOOM<span>!</span></span><span class="tag">Apple Watch 空气棒球</span></span></a>
+    <details class="lang" id="lang">
+      <summary aria-label="语言"><svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="8" cy="8" r="6.3"/><path d="M1.7 8h12.6M8 1.7c2 2 2 10.6 0 12.6M8 1.7c-2 2-2 10.6 0 12.6"/></svg><span class="long">简体中文</span><span class="short">简中</span><svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></summary>
+      <ul><li><a href="../../../guide/swing-not-counting/" hreflang="en" lang="en" data-folder="">English</a></li><li><a href="../../../ja/guide/swing-not-counting/" hreflang="ja" lang="ja" data-folder="ja">日本語</a></li><li><a href="../../../ko/guide/swing-not-counting/" hreflang="ko" lang="ko" data-folder="ko">한국어</a></li><li><a href="../../../zh-hant/guide/swing-not-counting/" hreflang="zh-Hant" lang="zh-Hant" data-folder="zh-hant">繁體中文</a></li><li><a href="./" hreflang="zh-Hans" lang="zh-Hans" data-folder="zh-hans" aria-current="page">简体中文</a></li><li><a href="../../../es/guide/swing-not-counting/" hreflang="es" lang="es" data-folder="es">Español</a></li><li><a href="../../../fr/guide/swing-not-counting/" hreflang="fr" lang="fr" data-folder="fr">Français</a></li></ul>
+    </details>
+  </header>
+  <main id="main">
+<article class="doc article">
+  <p class="eyebrow"><a href="../">Bataboom! 攻略</a></p>
+  <h1>为什么我的挥棒不算？</h1>
+  <p class="lede">Bataboom! 只回应真正的、双臂水平挥出的棒球挥棒。往下劈、把手臂往回拉或小幅甩手腕都会被故意忽略，这样日常的手臂动作就不会误触发击球声。</p>
+  
+  
+<h2>怎样才算挥棒</h2>
+<ul>
+<li>双手合握，十指交扣，像握住一根球棒。</li>
+<li>整条手臂一起动，绕着身体转。</li>
+<li>水平、快速，并且挥到底。</li>
+</ul>
+
+<h2>哪些动作会被忽略</h2>
+<ul>
+<li><b>往下劈：</b>像砍柴一样从高往低挥。</li>
+<li><b>往回拉：</b>把手臂往自己身上拽，而不是挥出去。</li>
+<li><b>动作太小或太慢：</b>只甩一下手腕，或者软绵绵地挥。差一点点就够快的挥棒只会发出“呼”的风声，没有结果。</li>
+<li>在本垒打挑战中，投手还没投球就挥棒不算，也不会扣机会。</li>
+</ul>
+
+<h2>还是没声音？试试这些</h2>
+<ol class="steps">
+<li>系紧表带，让手表不会在手腕上滑动。</li>
+<li>在设置中把<b>挥棒检测</b>调到“高”。越高越能检测轻柔的挥棒，飞行距离与成绩不受影响。</li>
+<li>检查音量：转动数码表冠，或使用设置中的<b>音量</b>。音量太小时 App 会提醒你。</li>
+<li>如果你换到另一边打，请在设置中更改<b>打击方向</b>。</li>
+</ol>
+
+<h2>屏幕黑了，这一棒算吗？</h2>
+<p>算。关闭“始终显示”时屏幕可能会休眠，但游戏和声音都会继续。抬起手腕就能看到结果，或者打开<b>屏幕常亮</b>。请看 <a href="../setup-and-wearing/">设置：手腕、表带、音量与“健康”</a>。</p>
+
+  <div class="contact cta"><p class="mail">挥动手腕，听见那一声“砰”。</p><p>Bataboom! Apple Watch 版，附带 iPhone 伴侣 App。</p><div class="store"><a class="badge" href="https://apps.apple.com/app/id6816128720"><img src="../../../img/app-store-badge-zh-hans.svg" alt="在 App Store 下载" height="48"></a><small><b>现已登陆 App Store</b> · 一次买断。没有广告，没有 App 内购买。</small></div></div>
+  <h2>更多攻略</h2>
+  <ul class="others"><li><a href="../how-to-hit-a-home-run/">Bataboom! 本垒打怎么打？</a></li><li><a href="../hr-challenge-timing/">本垒打挑战的时机：早了拉打，晚了往反方向</a></li><li><a href="../distance-and-exit-velocity/">怎样打得更远：飞行距离与击球初速</a></li><li><a href="../pass-and-play/">轮流对战：一块手表的本垒打派对</a></li><li><a href="../setup-and-wearing/">设置：手腕、表带、音量与“健康”</a></li><li><a href="../locker-room-unlocks/">装备室：12 件装备全解锁</a></li></ul>
+</article>
+  </main>
+  <footer>
+    <svg class="diamond" viewBox="0 0 200 110" aria-hidden="true"><path d="M100 104 L40 50 L100 -4 L160 50 Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="100" cy="50" r="5" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="96" y="100" width="8" height="8" transform="rotate(45 100 104)" fill="currentColor"/></svg>
+    <nav aria-label="网站导航"><a href="../">攻略</a><a href="../../support/">支持</a><a href="../../privacy/">隐私</a><a href="../../terms/">条款</a></nav>
+    <p class="fine">Bataboom! 由 Twin Build 开发。有问题请联系：<a href="mailto:twinbuilds30@gmail.com">twinbuilds30@gmail.com</a></p>
+    <p class="fine">Bataboom! 中的飞行距离和速度是娱乐性估算，不是实际测量。与任何联盟或球队均无关联。</p>
+    <p class="fine tm">Apple、Apple Watch、iPhone、iCloud、Game Center 和 App Store 是 Apple Inc. 的商标。</p>
+  </footer>
+</div>
+</body>
+</html>

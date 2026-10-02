@@ -1,0 +1,41 @@
+# Bataboom!
+
+> Bataboom! (Bataboom! Air Baseball) is an Apple Watch game by Twin Build that turns the watch into a baseball bat: swing your arms and the watch plays the crack of the bat, the crowd and the call.
+
+## What it does
+
+- Free Swing: every swing is a hit (single to home run) with an exit velocity and distance; back-to-back home runs make the crowd louder.
+- HR Challenge: time the pitch by ear (the sound peaks when the ball arrives); early pulls the ball, late goes the other way; 10 chances per round, a home run or foul keeps the chance; Easy, Normal and Pro.
+- Pass & Play: 2 to 4 players take turns on one watch, five chances each, then final standings.
+- Locker Room: 12 bats, balls, stadiums and looks for Laces (the baseball mascot), all earned by playing (11 from HR Challenge results, the Night Game from playing on three different days), nothing for sale; gear changes sound and look only, never distance.
+- Game Center: 4 leaderboards (home runs per round on Easy, Normal and Pro; longest home run) and 12 achievements.
+- iPhone companion: stats, a chart of every round, a spray chart, gear changes, home-run tips and a shareable card of the longest home run.
+- One-time purchase, no ads, no in-app purchases, no accounts, no data collected. Optional Apple Health Baseball workouts (write only) keep the game running while the screen sleeps. Progress is backed up in iCloud.
+- Requires watchOS 10 or later; the iPhone app requires iOS 17 or later. Distances and speeds are fun estimates, not measurements.
+- Status: available now on the App Store: https://apps.apple.com/app/id6816128720
+
+## Main pages
+
+- [Home](https://daniellin0516.github.io/bataboom/): what Bataboom! is, a gameplay video, Laces, guides and support
+- [Support and FAQ](https://daniellin0516.github.io/bataboom/support/): setup, swings that do not count, home runs, leaderboards, Health, contact
+- [Privacy policy](https://daniellin0516.github.io/bataboom/privacy/): no data collected; gameplay stays on the user's Apple Watch, iPhone and iCloud
+- [Terms of use](https://daniellin0516.github.io/bataboom/terms/): App Store license, playing safely, fun estimates, purchase
+- [Guide](https://daniellin0516.github.io/bataboom/guide/): Every Bataboom! tip in one place: how to hit a home run on Apple Watch, why a swing does not count, HR Challenge timing, distance, Pass & Play, setup and all Locker Room unlocks.
+
+## Guides
+
+- [How to hit a home run in Bataboom!](https://daniellin0516.github.io/bataboom/guide/how-to-hit-a-home-run/): A home run takes a swing that is hard and fast enough. In HR Challenge it also takes timing: swing at the loudest moment of the pitch. Lock your grip, swing level around your body, give it everything and swing all the way through.
+- [Why doesn't my swing count?](https://daniellin0516.github.io/bataboom/guide/swing-not-counting/): Bataboom! only answers a real, level baseball swing with both arms. Chopping down, pulling your arm back or a small flick of the wrist is ignored on purpose, so everyday arm movements never set off the crack.
+- [HR Challenge timing: early pulls it, late goes the other way](https://daniellin0516.github.io/bataboom/guide/hr-challenge-timing/): In HR Challenge you time the pitch by ear. The whoosh gets louder and peaks at the moment the ball reaches you: that is when to swing. Swing early and you pull it; swing late and it goes the other way.
+- [How to hit farther: distance and exit velocity](https://daniellin0516.github.io/bataboom/guide/distance-and-exit-velocity/): Distance and exit velocity come from how hard and fast you swing. In HR Challenge your timing adds to it: the closer to perfect, the harder the ball comes off the bat. Bats, balls and stadiums never change distance, so leaderboards stay fair.
+- [Pass & Play: a home run party on one watch](https://daniellin0516.github.io/bataboom/guide/pass-and-play/): Pass & Play turns one Apple Watch into a party game. Two to four players take turns, five chances each, then the final standings and a victory cheer for the winner.
+- [Setup: wrist, band, volume and Health](https://daniellin0516.github.io/bataboom/guide/setup-and-wearing/): Wear your watch on either wrist: Bataboom! sets your batting side from it. Tighten the band, interlace your fingers, turn the volume up, and allow Health if you want the game to keep running while the screen sleeps.
+- [Locker Room: all 12 unlocks](https://daniellin0516.github.io/bataboom/guide/locker-room-unlocks/): The Locker Room has 12 items to unlock: 11 come from your HR Challenge results, and the Night Game from playing on three different days. Nothing is for sale. Gear changes the sound and the look, never the distance.
+
+## Languages
+
+English (https://daniellin0516.github.io/bataboom/), 日本語 (https://daniellin0516.github.io/bataboom/ja/), 한국어 (https://daniellin0516.github.io/bataboom/ko/), 繁體中文 (https://daniellin0516.github.io/bataboom/zh-hant/), 简体中文 (https://daniellin0516.github.io/bataboom/zh-hans/), Español (https://daniellin0516.github.io/bataboom/es/), Français (https://daniellin0516.github.io/bataboom/fr/). Every page links its other languages with hreflang.
+
+## Contact
+
+Support email: twinbuilds30@gmail.com
